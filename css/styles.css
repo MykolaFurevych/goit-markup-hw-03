@@ -1,0 +1,192 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-font: 'Roboto';
+}
+body {
+  font-family: var(--primary-font), sans-serif;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Стилі шапки */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.studio {
+  color: #000;
+}
+
+/* Навігація */
+.nav-link .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.contact-link .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.nav-link .link:hover,
+.nav-link .link:focus {
+  color: var(--accent-color);
+}
+.nav-link .link.current {
+  color: var(--accent-color);
+}
+
+.contact-link .link:hover,
+.contact-link .link:focus {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button-knob {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+  color: #ffffff;
+}
+
+/* Переваги  */
+.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.section-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.section-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team {
+  background-color: #f5f4fa;
+}
+.section-head {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/* Футер */
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.info {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.studio-white {
+  color: #ffffff;
+}
+.info:hover,
+.info:focus {
+  color: #ffffff;
+}
+/* Css портфоліо */
+
+.button-knobs {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.button-knobs:hover,
+.button-knobs:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.button-knobs {
+  cursor: pointer;
+}
+.foto-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.resource {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.foto-title:hover,
+.foto-title:focus {
+  color: var(--accent-color);
+}
+.resource:hover,
+.resource:focus {
+  color: var(--accent-color);
+}
