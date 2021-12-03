@@ -16,6 +16,17 @@ ul {
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
 /* Стилі шапки */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -33,6 +44,18 @@ a {
 }
 
 /* Навігація */
+.menu {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-link .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link .link {
   font-weight: 500;
   font-size: 14px;
@@ -40,6 +63,14 @@ a {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.contact-link {
+  display: flex;
+  margin-left: 331;
+}
+.contact-link .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-link .link {
   font-weight: 500;
   font-size: 14px;
@@ -59,15 +90,45 @@ a {
 .contact-link .link:focus {
   color: var(--accent-color);
 }
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: 80px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.frame {
+  border: 1px solid #ececec;
+}
+
 /* Герой */
-.hero {
+.background {
   background-color: #2f303a;
+  margin-bottom: 94px;
+}
+
+.hero-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -78,13 +139,17 @@ a {
   line-height: 1.87;
 }
 .button {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
+
+  padding: 10px, 32px;
+
   cursor: pointer;
   background-color: var(--accent-color);
   color: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
@@ -93,7 +158,33 @@ a {
 }
 
 /* Переваги  */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 94px;
+}
+.container .benefits {
+  width: 270px;
+}
+.benefits .start {
+  text-align: start;
+}
 .section-title {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -101,23 +192,31 @@ a {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
+img {
+  margin-bottom: 30px;
+}
 .section-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-text-color);
 }
 .section-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
 }
-.team {
+.color {
   background-color: #f5f4fa;
 }
 .section-head {
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -125,9 +224,35 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+.our {
+  padding-top: 94px;
+}
+.frames {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 /* Футер */
 .footer {
   background-color: #2f303a;
+}
+.citi {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.size {
+  margin-bottom: 9px;
+}
+.container-footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .address {
   font-style: normal;
@@ -136,6 +261,9 @@ a {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.no-padding {
+  padding-left: 0;
+}
 .info {
   font-style: normal;
   font-size: 14px;
@@ -143,6 +271,7 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .studio-white {
   color: #ffffff;
 }

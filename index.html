@@ -21,68 +21,79 @@
   <body>
     <!--Шапка сайту-->
 
-    <header>
-      <nav>
-        <a href="/" class="logo">Web<span class="studio">Studio</span></a>
-        <ul class="nav-link">
-          <li><a href="" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+    <header class="">
+      <div class="container-header">
+        <nav class="menu">
+          <a href="/" class="logo">Web<span class="studio">Studio</span></a>
+          <ul class="nav-link">
+            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contact-link">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 96 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contact-link">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+38 96 111 11 11</a></li>
-      </ul>
+      </div>
+      <div class="frame"></div>
     </header>
     <!--Головний контент-->
 
     <main>
-      <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="button">
-          <span class="button-knob">Заказать услугу</span>
-        </button>
+      <section class="background">
+        <div class="hero-container">
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="button">
+            <span class="button-knob">Заказать услугу</span>
+          </button>
+        </div>
       </section>
 
       <!--Секція переваги -->
+
       <section class="section">
         <!--Заголовок,який треба скрити-->
-        <h2>Заголовок секции организации и планирования</h2>
-        <ul>
-          <li>
-            <h3 class="section-title">Внимание к деталям</h3>
-            <p class="section-text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title">Пунктуальность</h3>
-            <p class="section-text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title">Планирование</h3>
-            <p class="section-text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title">Современные технологии</h3>
-            <p class="section-text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div>
+          <h2 class="visually-hidden">Заголовок секции организации и планирования</h2>
+          <ul class="container">
+            <li class="benefits">
+              <h3 class="section-title">Внимание к деталям</h3>
+              <p class="section-text start">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="benefits">
+              <h3 class="section-title">Пунктуальность</h3>
+              <p class="section-text start">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="benefits">
+              <h3 class="section-title">Планирование</h3>
+              <p class="section-text start">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="benefits">
+              <h3 class="section-title">Современные технологии</h3>
+              <p class="section-text start">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Секція чим ми занімаємося-->
       <section class="section">
         <h2 class="section-head">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="container">
           <li><img src="./images/img1.jpg" alt="site development" width="370" /></li>
           <li>
             <img src="./images/img2.jpg" alt="development of mobile applications" width="370" />
@@ -90,26 +101,27 @@
           <li><img src="./images/img3.jpg" alt="project development" width="370" /></li>
         </ul>
       </section>
+
       <!-- Секція наша команда -->
-      <section class="section team">
-        <h2 class="section-head">Наша команда</h2>
-        <ul>
-          <li>
+      <section class="section color">
+        <h2 class="section-head our">Наша команда</h2>
+        <ul class="container team">
+          <li class="frames">
             <img src="./images/imga.jpg" alt="Product Designer" width="270" />
             <h3 class="section-name">Игорь Демьяненко</h3>
             <p class="section-text">Product Designer</p>
           </li>
-          <li>
+          <li class="frames">
             <img src="./images/imgb.jpg" alt="Frontend Developer" width="270" />
             <h3 class="section-name">Ольга Репина</h3>
             <p class="section-text">Frontend Developer</p>
           </li>
-          <li>
+          <li class="frames">
             <img src="./images/imgc.jpg" alt="Marketing" width="270" />
             <h3 class="section-name">Николай Тарасов</h3>
-            <p>Marketing</p>
+            <p class="section-text">Marketing</p>
           </li>
-          <li>
+          <li class="frames">
             <img src="./images/imgd.jpg" alt="UI Designer" width="270" />
             <h3 class="section-name">Михаил Ермаков</h3>
             <p class="section-text">UI Designer</p>
@@ -119,14 +131,18 @@
     </main>
     <!-- Підвал -->
     <footer class="footer">
-      <a href="" class="logo">Web<span class="studio-white">Studio</span></a>
-      <address class="address">
-        г. Киев, пр-т Леси Украинки, 26
-        <ul>
-          <li><a href="mailto:info@example.com" class="info">info@example.com</a></li>
-          <li><a href="tel:+380991111111" class="info">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container-footer">
+        <a href="" class="logo">Web<span class="studio-white">Studio</span></a>
+        <address class="address">
+          <p class="citi">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="no-padding">
+            <li class="size">
+              <a href="mailto:info@example.com" class="info">info@example.com</a>
+            </li>
+            <li><a href="tel:+380991111111" class="info">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
