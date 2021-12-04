@@ -119,14 +119,6 @@ img {
   text-align: center;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 .hero-title {
   margin-bottom: 30px;
 
@@ -146,9 +138,7 @@ img {
 .button {
   min-width: 200px;
   height: 50px;
-
   padding: 10px, 32px;
-
   cursor: pointer;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -200,20 +190,15 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-.container-benefit {
+.work {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 94px;
-  margin-right: auto;
-  margin-left: auto;
-
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  outline: 1px solid black;
 }
-
+.indent {
+  margin-right: 30px;
+}
+.list {
+  display: flex;
+}
 .section-name {
   margin-top: 30px;
 }
@@ -235,6 +220,7 @@ img {
 }
 .color {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
 }
 .section-head {
   margin-bottom: 50px;
@@ -254,6 +240,9 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.frames:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Футер */
 .footer {
@@ -269,14 +258,7 @@ img {
 .size {
   margin-bottom: 9px;
 }
-.container {
-  margin-right: auto;
-  margin-left: auto;
 
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 .address {
   font-style: normal;
   font-size: 14px;
@@ -303,6 +285,9 @@ img {
   color: #ffffff;
 }
 /* Css портфоліо */
+.header {
+  margin-bottom: 94px;
+}
 
 .button-knobs {
   font-weight: 500;
@@ -317,13 +302,9 @@ img {
 .button-set .item:not(:last-child) {
   margin-right: 8px;
 }
-.container {
-  margin-right: auto;
-  margin-left: auto;
+
+.form {
   margin-top: 50px;
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .button-set {
   display: flex;
