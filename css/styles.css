@@ -130,13 +130,11 @@ img {
   padding-bottom: 200px;
   text-align: center;
 }
-.main {
+
+.hero-title {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.hero-title {
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -147,15 +145,15 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-.button-knob {
+
+.button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-}
-.button {
+
   min-width: 200px;
   height: 50px;
-  padding: 10px, 32px;
+  padding: 10px 32px;
   cursor: pointer;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -209,6 +207,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+.work-section {
+  padding-bottom: 94px;
 }
 .work {
   display: flex;
