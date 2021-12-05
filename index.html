@@ -21,8 +21,8 @@
   <body>
     <!--Шапка сайту-->
 
-    <header>
-      <div class="container-header">
+    <header class="header-box">
+      <div class="container header">
         <nav class="menu">
           <a href="/" class="logo">Web<span class="studio">Studio</span></a>
           <ul class="nav-link">
@@ -39,7 +39,6 @@
           <li class="item"><a href="tel:+380961111111" class="link">+38 96 111 11 11</a></li>
         </ul>
       </div>
-      <div class="frame"></div>
     </header>
     <!--Головний контент-->
 
@@ -47,8 +46,7 @@
       <section class="background">
         <div class="container">
           <h1 class="hero-title">
-            Эффективные решения <br />
-            для вашего бизнеса
+            <div class="main">Эффективные решения для вашего бизнеса</div>
           </h1>
           <button type="button" class="button">
             <span class="button-knob">Заказать услугу</span>
@@ -61,8 +59,8 @@
       <section class="section">
         <!--Заголовок,який треба скрити-->
 
-        <h2 class="visually-hidden">Заголовок секции организации и планирования</h2>
         <div class="container">
+          <h2 class="visually-hidden">Заголовок секции организации и планирования</h2>
           <ul class="benefits-set">
             <li class="benefits">
               <h3 class="section-title">Внимание к деталям</h3>
@@ -102,35 +100,45 @@
             <li class="indent">
               <img src="./images/img2.jpg" alt="development of mobile applications" width="370" />
             </li>
-            <li><img src="./images/img3.jpg" alt="project development" width="370" /></li>
+            <li class="indent">
+              <img src="./images/img3.jpg" alt="project development" width="370" />
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- Секція наша команда -->
       <section class="section color">
-        <h2 class="section-head our">Наша команда</h2>
         <div class="container">
+          <h2 class="section-head">Наша команда</h2>
           <ul class="list team">
             <li class="frames">
               <img src="./images/imga.jpg" alt="Product Designer" width="270" />
-              <h3 class="section-name">Игорь Демьяненко</h3>
-              <p class="section-text">Product Designer</p>
+              <div class="team-name">
+                <h3 class="section-name">Игорь Демьяненко</h3>
+                <p class="section-text">Product Designer</p>
+              </div>
             </li>
             <li class="frames">
               <img src="./images/imgb.jpg" alt="Frontend Developer" width="270" />
-              <h3 class="section-name">Ольга Репина</h3>
-              <p class="section-text">Frontend Developer</p>
+              <div class="team-name">
+                <h3 class="section-name">Ольга Репина</h3>
+                <p class="section-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="frames">
               <img src="./images/imgc.jpg" alt="Marketing" width="270" />
-              <h3 class="section-name">Николай Тарасов</h3>
-              <p class="section-text">Marketing</p>
+              <div class="team-name">
+                <h3 class="section-name">Николай Тарасов</h3>
+                <p class="section-text">Marketing</p>
+              </div>
             </li>
             <li class="frames">
               <img src="./images/imgd.jpg" alt="UI Designer" width="270" />
-              <h3 class="section-name">Михаил Ермаков</h3>
-              <p class="section-text">UI Designer</p>
+              <div class="team-name">
+                <h3 class="section-name">Михаил Ермаков</h3>
+                <p class="section-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -141,12 +149,12 @@
       <div class="container">
         <a href="" class="logo">Web<span class="studio-white">Studio</span></a>
         <address class="address">
-          <p class="citi">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="no-padding">
+          <p class="adress-citi">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul>
             <li class="size">
               <a href="mailto:info@example.com" class="info">info@example.com</a>
             </li>
-            <li><a href="tel:+380991111111" class="info">+38 099 111 11 11</a></li>
+            <li class="size"><a href="tel:+380991111111" class="info">+38 099 111 11 11</a></li>
           </ul>
         </address>
       </div>
